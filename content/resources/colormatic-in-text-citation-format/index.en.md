@@ -110,7 +110,7 @@ Often when using CCF, one may want to specify the use of CCF. If you wish, you c
 MM/DD/YYYY
 {.muted}
 
-1. American Psychological Association. (Pub. Oct. ++2019++) *"APA Style Guide, 7th Edition"* ++Chapter 9++ Retrieved: ++5/24/2025++.
+1. American Psychological Association. (Pub. ++Oct. 2019++) *"APA Style Guide, 7th Edition"* ++Chapter 9++ Retrieved: ++5/24/2025++.
 
 ---
 
