@@ -1,0 +1,65 @@
+baseURL = "https://library.colormatic.org"
+defaultContentLanguageInSubdir = true
+i18nDir = "translations" # Shortening "internationalization" to i18n is pretentious and stupid
+
+[languages]
+	[languages.en]
+		title = "Colormatic Library"
+		weight = 1
+		[languages.en.menus]
+			[[languages.en.menus.main]]
+				name = "Home"
+				pageRef = "/"
+				weight = 10
+			[[languages.en.menus.main]]
+				name = "Resources"
+				pageRef = "/resources"
+				weight = 20
+	[languages.es]
+		title = "Biblioteca Colormatic"
+		weight = 2
+		[languages.es.menus]
+			[[languages.es.menus.main]]
+				name = "Inicio"
+				pageRef = "/"
+				weight = 10
+			[[languages.es.menus.main]]
+				name = "Recursos"
+				pageRef = "/resources"
+				weight = 20
+	[languages.ja]
+		title = "Colormatic Library"
+		weight = 2
+		[languages.ja.menus]
+			[[languages.ja.menus.main]]
+				name = "ホームページ"
+				pageRef = "/"
+				weight = 10
+			[[languages.ja.menus.main]]
+				name = "リソース"
+				pageRef = "/resources"
+				weight = 20
+	
+[markup]
+	[markup.goldmark]
+		[markup.goldmark.renderer]
+			unsafe = true # Allow HTML in Markdown
+
+		[markup.goldmark.parser]
+			[markup.goldmark.parser.attribute]
+				block = true
+				title = true
+
+		[markup.goldmark.extensions]
+			[markup.goldmark.extensions.extras]
+				[markup.goldmark.extensions.extras.delete]
+					enable = true
+				[markup.goldmark.extensions.extras.insert]
+					enable = true
+				[markup.goldmark.extensions.extras.mark]
+					enable = true
+				[markup.goldmark.extensions.extras.subscript]
+					enable = true
+				[markup.goldmark.extensions.extras.superscript]
+					enable = true
+
