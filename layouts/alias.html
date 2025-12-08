@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Colormatic Library</title>
+    <link rel="canonical" href="https://library.colormatic.org/" />
+    <meta charset="utf-8" />
+    <style>
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222128;
+      color: white;
+    }
+}
+
+    </style>
+    <script>
+
+const fallbackLanguage = "en";
+const supportedLanguages = ["en", "es", "ja"];
+
+let selectedLanguage = "";
+
+for (let iter in navigator.languages) {
+  let language = navigator.languages[iter];
+  if (supportedLanguages.includes(language)) {
+    selectedLanguage = language;
+    break;
+  }
+}
+
+if (selectedLanguage) {
+  window.location.href = selectedLanguage;
+}
+else {
+  window.location.href = fallbackLanguage;
+}
+
+    </script>
+  </head>
+  <body>
+    <p>
+      You should be automatically redirected. If you have Javascript disabled or are using an older browser, <a href="/en/">click here</a>.
+    </p>
+    <p>
+      Debería ser redirigido automáticamente. Si tiene Javascript deshabilitado o está utilizando un navegador antiguo, haga <a href="/es/">clic aquí</a>.
+    </p>
+    <p>
+      自動的にリダイレクトされます。JavaScriptが無効になっている場合、または古いブラウザをご使用の場合は、<a href="/ja/">こちらをクリックしてください</a>。
+    </p>
+  </body>
+</html>
