@@ -16,5 +16,5 @@ Honestly, I don't regret my decision so far. Sure, it's a shame that I can't edi
 
 Overall, it's in a better situation and we can think about building a web editor tool ourselves in the future. The Colormatic Library now runs as a static website, and you can [see the source code on Colormatic Git](https://git.colormatic.org/ColormaticStudios/Colormatic-Library).
 
-NOTES:
+NOTES:  
 I started this blog post soon after I finished redoing the UI for the library in Hugo on December 11th 2025, but only wrote the first paragraph. I eventually picked it back up on January 16th to write the rest.
